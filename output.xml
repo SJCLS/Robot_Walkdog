@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2024-11-03T00:19:18.023681" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="C:\Users\Samuel\Desktop\robot_apagar\teste.robot">
+<test id="s1-t1" name="Verificar Titulo Da Pagina" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-03T00:19:18.184402" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Samuel\\Desktop\\robot_apagar\\browser\\traces\\9048c867-e0e2-44c9-8588-786f1c6a2b5b"}</msg>
+<msg time="2024-11-03T00:19:18.217652" level="INFO">Starting Browser process C:\Users\Samuel\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using port 58824</msg>
+<msg time="2024-11-03T00:19:18.217652" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Samuel\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '58824']</msg>
+<msg time="2024-11-03T00:19:18.981006" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Samuel\\Desktop\\robot_apagar\\browser\\traces\\9048c867-e0e2-44c9-8588-786f1c6a2b5b"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-03T00:19:18.183265" elapsed="0.797741"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-03T00:19:21.058496" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app</msg>
+<msg time="2024-11-03T00:19:21.058496" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://walkdog.vercel.app</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-03T00:19:18.981006" elapsed="2.077490"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2024-11-03T00:19:21.071496" level="INFO">Title: 'Walkdog by Papito'</msg>
+<arg>equal</arg>
+<arg>Walkdog by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-11-03T00:19:21.059494" elapsed="0.012002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-03T00:19:21.131054" level="INFO">Text: 'Cuidado e diversão em cada passo'</msg>
+<arg>css=h1</arg>
+<arg>equal</arg>
+<arg>Cuidado e diversão em cada passo</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-03T00:19:21.071496" elapsed="0.059558"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-03T00:19:21.154058" level="INFO">Text: 'Quer gerar uma renda extra passeando com pets? Faça parte da nossa comunidade de dog walkers.'</msg>
+<arg>css=.content main p</arg>
+<arg>equal</arg>
+<arg>Quer gerar uma renda extra passeando com pets? Faça parte da nossa comunidade de dog walkers.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-03T00:19:21.132053" elapsed="0.022005"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-03T00:19:21.155060" level="INFO">Clicks the element 'css=a[href="/signup"]'.</msg>
+<arg>css=a[href="/signup"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-03T00:19:21.155060" elapsed="0.107139"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>equal</arg>
+<arg>https://walkdog.vercel.app/signup</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2024-11-03T00:19:21.262199" elapsed="0.004002"/>
+</kw>
+<doc>Visita uma página e verifica o título</doc>
+<status status="PASS" start="2024-11-03T00:19:18.182270" elapsed="3.084930"/>
+</test>
+<status status="PASS" start="2024-11-03T00:19:18.029801" elapsed="3.329595"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
